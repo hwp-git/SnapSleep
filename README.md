@@ -1,51 +1,42 @@
-# SnapSleep
+# Snap Sleep
 Where the SLEEP begins...
 
-# 🌙 Snap Sleep: AI-Driven Sleep Airway Diagnostic Engine (iOS POC)
+# 🌙 Snap Sleep: 自我進化的多模態 AI 睡眠代理 (Self-Evolving AI Sleep Agent)
 
-[![iOS](https://img.shields.io/badge/iOS-17.0+-blue.svg)](https://developer.apple.com/ios/)
-[![SwiftUI](https://img.shields.io/badge/SwiftUI-Native-orange.svg)](https://developer.apple.com/xcode/swiftui/)
-[![CoreML](https://img.shields.io/badge/CoreML-Edge%20AI-green.svg)](https://developer.apple.com/documentation/coreml)
-[![Privacy First](https://img.shields.io/badge/Privacy-100%25%20Local-success.svg)](#)
+[![Agent-Native](https://img.shields.io/badge/Architecture-Agent--Native-red.svg)](#)
+[![Multi-Modal AI](https://img.shields.io/badge/AI-Multi--Modal-purple.svg)](#)
+[![Edge to Cloud](https://img.shields.io/badge/Scale-Edge_to_Cloud-blue.svg)](#)
+[![iOS](https://img.shields.io/badge/iOS-Native%20Vision-blue.svg)](https://developer.apple.com/ios/)
 
-> **Snap Sleep** 是一個建立在「邊緣運算 (Edge AI)」與「精準解剖學」之上的睡眠呼吸道診斷生態系。我們透過軟體診斷成因 (The "Why")，並提供專屬的專利硬體套組 (The "What")，徹底打破傳統止鼾器市場「盲盒式購買」的高退貨率痛點。
-
----
-
-## 🚀 專案願景 (The Vision)
-傳統的止鼾設備（如 TSD、MAD 或口條貼）往往未能對症下藥。Snap Sleep 採用 **Hardware-Enabled SaaS** 商業模式：
-1. **先診斷 (Diagnose)：** 透過 iPhone 或外部攝影機與麥克風，在本地端捕捉睡眠時的解剖學特徵（如：下顎張開角度、喘鳴分貝）。
-2. **精準給藥 (Prescribe)：** AI 引擎交叉比對出打呼的根本原因（鼻塞型、舌根塌陷、軟顎撲動、口呼吸喘鳴）。
-3. **交叉銷售 (Cross-sell)：** 向使用者推薦對應的專屬硬體組合（例如：Snap Sleep 獨家專利 `X-Wing` 矽膠雙翼止鼾器、夜視攝影機）。
-
-Phase 1 (Current): Local Edge AI via iPhone Vision & Audio Frameworks + 3D-Printed MVP.
-Phase 2 (Scaling): Cloud-computing integration for deep pattern analysis & continuous model training via user feedback loops.
-Phase 3 (Ecosystem): Dedicated Night Vision integration and proprietary IoT sleep peripherals.
+> **Snap Sleep** 是一個代理原生 (Agent-Native)、具備隱私保護且能自我進化的睡眠健康生態系。我們將多模態 AI（影像與聲學）轉化為感測基礎設施，讓 AI 代理不僅能「診斷」打呼的機械性成因，更能主動「介入」提供客製化硬體處方（X-Wing 模組），並根據使用者的真實反饋進行模型優化，創造一個持續進步的物理健康閉環 (Physical-Digital Recovery Loop)。
 
 ---
 
-## 🛡️ 隱私絕對優先 (100% Privacy-First)
-本專案堅持 **「影片絕不上傳雲端」** 的最高隱私標準。
-所有的影像與聲音特徵提取均透過 Apple 內建硬體神經網路引擎 (Neural Engine) 在 **手機本地端 (Local-Device)** 完成即時運算，分析完畢後自動銷毀影片快取，僅保留輕量級的 JSON 診斷日誌。
+## 🚀 專案願景：代理原生時代的睡眠基礎設施
+傳統的睡眠 App 只是被動顯示數據的儀表板。Snap Sleep 是一個**主動式 AI 健康代理 (Autonomous Health Agent)**。
+1. **感知 (Sense - 多模態基礎設施)：** 利用邊緣運算（初期透過 iPhone，未來擴展至專屬夜視攝影機）在低光源下捕捉面部生物力學與氣流聲學特徵。
+2. **診斷 (Diagnose)：** AI 引擎精準判斷打呼的物理根源（下顎後掉、舌根塌陷、軟顎撲動）。
+3. **介入 (Intervene)：** 代理會開立專屬的物理干擾處方——我們獨家專利、可快速 3D 列印成型的 `X-Wing` 矽膠干擾機制。
+4. **進化 (Evolve)：** 透過測量隔夜的生物數據變化與使用者的主觀反饋，AI 代理會自我訓練並持續優化其診斷與治療模型。
 
 ---
 
-## 🏗️ POC 核心技術架構 (System Architecture)
+## 🛡️ 隱私絕對優先與數據擴展 (Privacy-First & Scalable)
+在 POC 階段，我們堅持 **「影片絕不上傳雲端」**。
+所有的影像提取均透過 Apple 內建硬體神經網路引擎 (Neural Engine) 在 **手機本地端 (Edge AI)** 完成即時運算。隨著系統擴展，我們僅上傳去識別化的數值標籤（如：時間軸、角度偏移值、分貝參數）至雲端進行深度模型訓練，確保最高隱私標準的同時，賦予 AI 自我進化的能力。
 
-### 1. 視覺特徵引擎：Visual Jaw Drop Angle (Vision Framework)
-利用 iOS `Vision` 框架與 `VNDetectFaceLandmarksRequest`，在低光源環境下追蹤面部動態。
-* **核心邏輯：** 即時計算上唇 (Upper Lip) 與下唇 (Lower Lip) 的 Y 軸座標距離。
-* **觸發條件：** 當距離大於動態閾值且持續超過設定時間，標記為「張嘴 / 下顎後掉 (Jaw Drop)」事件。
+---
 
-### 2. 聲學特徵引擎：Audio dB Monitor (AVFoundation)
-精準捕捉氣流受阻時產生的聲學特徵，與影像時間軸完美對齊。
-* **核心邏輯：** 使用 `AVAudioRecorder` 開啟監聽 (`isMeteringEnabled = true`)。
-* **資料處理：** 每秒讀取 `averagePower(forChannel: 0)` 並轉換為人類可讀的分貝值 (dB)。
+## 🏗️ 核心技術架構 (System Architecture)
 
-### 3. 本地端診斷大腦：The 5W Cross-Reference Engine
-將擷取到的資料轉化為結構化的 `5W (What, When, Why, Where, Who)` 醫療日誌：
+### 1. 多模態感知引擎 (Multi-Modal Sensory Infrastructure)
+* **視覺特徵引擎 (Vision Framework)：** 利用 `VNDetectFaceLandmarksRequest` 在低光源下追蹤動態。即時計算上/下唇的 Y 軸座標距離，精準捕捉「張嘴 / 下顎後掉 (Jaw Drop)」事件。
+* **聲學特徵引擎 (AVFoundation)：** 使用 `AVAudioRecorder` (`isMeteringEnabled = true`) 監聽氣流受阻的頻率與分貝 (dB) 變化，並與視覺時間軸完美對齊。
 
-| 醫學解剖成因 (The "Why") | AI 診斷邏輯 (The Logic) | 推薦解決方案 (The Hardware) |
+### 2. 診斷大腦與自學習迴圈 (The AI Agent Brain)
+將擷取到的資料轉化為結構化的 `5W (What, When, Why, Where, Who)` 醫療日誌，並進行交叉比對：
+
+| 醫學解剖成因 (The "Why") | 多模態 AI 診斷邏輯 (Vision + Sound) | AI 推薦介入方案 (The Hardware) |
 | :--- | :--- | :--- |
 | **口呼吸喘鳴 (Mouth Wheezing)** | `Jaw Drop 角度極大` + `連續乾澀氣流聲` | **X-Wing 矽膠雙翼** (物理限制口部亂流) |
 | **舌根塌陷 (Tongue-Based)** | `嘴唇閉合或微張` + `突發性阻塞聲 / 窒息感` | **X-Wing 內部吸氣球** (舌頭穩定牽引) |
@@ -54,28 +45,18 @@ Phase 3 (Ecosystem): Dedicated Night Vision integration and proprietary IoT slee
 
 ---
 
-## 📱 核心功能展示 (Features)
-
-### 💡 互動式診斷漏斗 (The Diagnostic Funnel)
-在使用者進入睡眠監測前，App 內建基於 D3.js / SwiftUI 的 **人體呼吸道剖面模擬器**。
-透過視覺化氣流動力學與「物理衝突點」，教育使用者打呼成因，並建立 AI 模型的基準線 (Baseline)。
-
-### 📊 睡眠日誌分析 (Sleep Report)
-早晨醒來時，產出精美的本地端儀表板，明確指出昨晚發生了幾次「下顎後掉」與「氣道阻塞」，並順暢引導至 Snap Sleep 專屬硬體的購買頁面。
-
----
-
 ## 🗺️ 產品發展路線圖 (Roadmap)
 
-* [x] **Phase 0:** 硬體 MVP (Bambu Lab 3D 列印) 與市場競品物理衝突分析。
-* [x] **Phase 1 (Current):** iOS 原生 App POC，驗證 Edge AI 捕捉 Jaw Drop Angle 的可行性。
-* [ ] **Phase 2:** 軟硬體整合測試，透過 App 漏斗開始發售 `X-Wing` 止鼾套組。
-* [ ] **Phase 3 (Future):** 推出帶有醫療級紅外線的「Snap Sleep 專屬睡眠雷達 (IP Camera)」，向高階用戶進行升級銷售 (Upsell)。
+這是一場從邊緣運算走向全生態系的革命：
+
+* [x] **Phase 1 (Current) - Edge AI & MVP：** 基於 iOS Vision & Audio Frameworks 的本地端多模態概念驗證，結合 Bambu Lab A1 快速打樣的 X-Wing 物理干擾設備。
+* [ ] **Phase 2 (Scaling) - Cloud Computing & Self-Evolving：** 整合雲端運算，進行深度模式分析。導入使用者反饋迴圈 (User Feedback Loops)，讓 AI 代理根據真實的隔夜療效，自動訓練並優化推薦模型。
+* [ ] **Phase 3 (Ecosystem) - IoT & Night Vision：** 推出帶有機器視覺的「Snap Sleep 專屬夜視攝影機」與智慧睡眠周邊設備，完整涵蓋高階使用者的自我改善生態系。
 
 ---
 
 ## 🔒 關於開源與智財權 (About Open Source & IP)
-本 repository 為 **櫥窗展示版 (Showcase)**，旨在展示團隊架構能力與技術願景。
-為保護 Snap Sleep 的核心演算法、CoreML 權重以及 X-Wing 的物理參數設計，核心商業邏輯部分以閉源方式維護。針對 UI 元件與基礎擴充套件，我們將逐步抽離並開源回饋社群。
+本 repository 為 **櫥窗展示版 (Showcase)**，旨在向投資人與技術夥伴展示團隊的 Agent-Native 系統架構能力與技術願景。
+為保護 Snap Sleep 的多模態核心演算法、自我進化權重以及 X-Wing 的物理參數設計，核心商業邏輯以閉源方式維護。針對 UI 元件、視覺化漏斗與基礎 API，我們將逐步抽離並開源回饋社群。
 
-*Designed with 🌙 by the Snap Sleep Team.*
+*Designed with 🌙 by the Snap Sleep Team. (Silicon Valley Software DNA x Taiwan Hardware Iteration)*
