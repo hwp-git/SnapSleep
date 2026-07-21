@@ -14,9 +14,13 @@ Where the SLEEP begins...
 
 ## 🚀 專案願景 (The Vision)
 傳統的止鼾設備（如 TSD、MAD 或口條貼）往往未能對症下藥。Snap Sleep 採用 **Hardware-Enabled SaaS** 商業模式：
-1. **先診斷 (Diagnose)：** 透過 iPhone 鏡頭與麥克風，在本地端捕捉睡眠時的解剖學特徵（如：下顎張開角度、喘鳴分貝）。
+1. **先診斷 (Diagnose)：** 透過 iPhone 或外部攝影機與麥克風，在本地端捕捉睡眠時的解剖學特徵（如：下顎張開角度、喘鳴分貝）。
 2. **精準給藥 (Prescribe)：** AI 引擎交叉比對出打呼的根本原因（鼻塞型、舌根塌陷、軟顎撲動、口呼吸喘鳴）。
-3. **交叉銷售 (Cross-sell)：** 向使用者推薦對應的專屬硬體組合（例如：Snap Sleep 獨家專利 `X-Wing` 矽膠雙翼止鼾器）。
+3. **交叉銷售 (Cross-sell)：** 向使用者推薦對應的專屬硬體組合（例如：Snap Sleep 獨家專利 `X-Wing` 矽膠雙翼止鼾器、夜視攝影機）。
+
+Phase 1 (Current): Local Edge AI via iPhone Vision & Audio Frameworks + 3D-Printed MVP.
+Phase 2 (Scaling): Cloud-computing integration for deep pattern analysis & continuous model training via user feedback loops.
+Phase 3 (Ecosystem): Dedicated Night Vision integration and proprietary IoT sleep peripherals.
 
 ---
 
