@@ -1,12 +1,11 @@
-# Snap Sleep
-Where the SLEEP begins...
-
 # 🌙 Snap Sleep: 自我進化的多模態 AI 睡眠代理 (Self-Evolving AI Sleep Agent)
 
 [![Agent-Native](https://img.shields.io/badge/Architecture-Agent--Native-red.svg)](#)
 [![Multi-Modal AI](https://img.shields.io/badge/AI-Multi--Modal-purple.svg)](#)
 [![Edge to Cloud](https://img.shields.io/badge/Scale-Edge_to_Cloud-blue.svg)](#)
 [![iOS](https://img.shields.io/badge/iOS-Native%20Vision-blue.svg)](https://developer.apple.com/ios/)
+
+[English](https://github.com/hwp-git/SnapSleep/blob/main/README.md)
 
 > **Snap Sleep** 是一個代理原生 (Agent-Native)、具備隱私保護且能自我進化的睡眠健康生態系。我們將多模態 AI（影像與聲學）轉化為感測基礎設施，讓 AI 代理不僅能「診斷」打呼的機械性成因，更能主動「介入」提供客製化硬體處方（X-Wing 模組），並根據使用者的真實反饋進行模型優化，創造一個持續進步的物理健康閉環 (Physical-Digital Recovery Loop)。
 
