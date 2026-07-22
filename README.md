@@ -1,6 +1,3 @@
-# Snap Sleep
-Where the SLEEP begins...
-
 # 🌙 Snap Sleep: Self-Evolving Multi-Modal AI Sleep Agent
 
 [![Agent-Native](https://img.shields.io/badge/Architecture-Agent--Native-red.svg)](#)
@@ -9,6 +6,8 @@ Where the SLEEP begins...
 [![iOS](https://img.shields.io/badge/iOS-Native%20Vision-blue.svg)](https://developer.apple.com/ios/)
 
 > **Snap Sleep** is an agent-native, privacy-first, and self-evolving sleep health ecosystem. We are transforming multi-modal AI (vision and acoustics) into sensory infrastructure. Our AI agent doesn't just "diagnose" the mechanical causes of snoring—it actively "intervenes" by prescribing a customized hardware solution (our proprietary X-Wing module) and continuously self-optimizes its models based on real-world efficacy, creating an ever-improving Physical-Digital Recovery Loop.
+
+<img width="1408" height="768" alt="Lifestyle_snoring_overlay1" src="https://github.com/user-attachments/assets/fab37601-f35f-4911-be2e-50ec3fe1fd21" />
 
 ---
 
