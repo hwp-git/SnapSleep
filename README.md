@@ -4,7 +4,9 @@
 [![Multi-Modal AI](https://img.shields.io/badge/AI-Multi--Modal-purple.svg)](#)
 [![Edge to Cloud](https://img.shields.io/badge/Scale-Edge_to_Cloud-blue.svg)](#)
 [![iOS](https://img.shields.io/badge/iOS-Native%20Vision-blue.svg)](https://developer.apple.com/ios/)
+
 [繁體中文](https://github.com/hwp-git/SnapSleep/blob/main/README%20%E4%B8%AD%E6%96%87.md)
+
 > **Snap Sleep** is an agent-native, privacy-first, and self-evolving sleep health ecosystem. We are transforming multi-modal AI (vision and acoustics) into sensory infrastructure. Our AI agent doesn't just "diagnose" the mechanical causes of snoring—it actively "intervenes" by prescribing a customized hardware solution (our proprietary X-Wing module) and continuously self-optimizes its models based on real-world efficacy, creating an ever-improving Physical-Digital Recovery Loop.
 
 <img width="1408" height="768" alt="Lifestyle_snoring_overlay1" src="https://github.com/user-attachments/assets/fab37601-f35f-4911-be2e-50ec3fe1fd21" />
